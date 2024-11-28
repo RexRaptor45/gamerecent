@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cbtis Danger Zone - Menú y Reinicio</title>
+    <link rel="stylesheet" href="estilog.css">
+</head>
+<body>
+    <body>
+        <!-- Pantalla de Inicio de Sesión -->
+        <section id="loginScreen">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    
+        <!-- Menú Principal -->
+        <header id="menu" style="display: none;">
+            <h1>Cbtis danger zone</h1>
+            <button id="startGame">Jugar</button>
+            <button id="showScores">Ver Puntajes</button>
+        </header>
+    
+        <!-- Contenedor del Juego -->
+        <main id="gameContainer" style="display: none;">
+            <canvas id="gameCanvas"></canvas>
+            <div id="gameOverScreen" style="display: none;">
+                <h2>¡Juego Terminado!</h2>
+                <button id="restart">Reiniciar</button>
+            </div>
+        </main>
+    
+        <script src="code.js"></script>
+    </body>
+    </html>
